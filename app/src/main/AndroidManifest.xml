@@ -40,7 +40,8 @@
             </intent-filter>
         </activity>
         <activity android:name="liekkasnote.applicationpage.SignUp" />
-        <activity android:name="liekkasnote.applicationpage.HomePage"></activity>
+        <activity android:name="liekkasnote.applicationpage.HomePage" />
+        <activity android:name="liekkasnote.applicationpage.DiaryList"></activity>
     </application>
 
 </manifest>
