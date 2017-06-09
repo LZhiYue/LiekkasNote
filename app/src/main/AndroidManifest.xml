@@ -41,7 +41,7 @@
         </activity>
         <activity android:name="liekkasnote.applicationpage.SignUp" />
         <activity android:name="liekkasnote.applicationpage.HomePage" />
-        <activity android:name="liekkasnote.applicationpage.DiaryList"></activity>
+        <activity android:name="liekkasnote.applicationpage.DiaryList"/>
     </application>
 
 </manifest>
