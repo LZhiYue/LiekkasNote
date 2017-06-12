@@ -1,4 +1,3 @@
 <resources>
-    <string name="app_name">LiekkasNote</string>
-    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="app_name">Liekkas Note</string>
 </resources>
