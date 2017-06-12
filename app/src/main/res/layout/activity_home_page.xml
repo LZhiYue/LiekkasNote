@@ -58,6 +58,7 @@
 
         <ImageView
             android:id="@+id/diary_arrow"
+            android:clickable="true"
             android:layout_alignParentEnd="true"
             android:layout_alignBottom="@id/diary_icon"
             android:layout_alignTop="@id/diary_icon"
@@ -96,6 +97,7 @@
 
         <ImageView
             android:id="@+id/todo_arrow"
+            android:clickable="true"
             android:layout_alignParentEnd="true"
             android:layout_alignBottom="@id/todo_icon"
             android:layout_alignTop="@id/todo_icon"
