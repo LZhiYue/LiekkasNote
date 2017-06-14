@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!--Default-->
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#666666</color>
@@ -26,5 +27,13 @@
 
 
 
+=======
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorLightBlue">#9fcedc</color>
+    <color name="colorDark">#000000</color>
+    <color name="colorDeepBlue">#44a0bb</color>
+>>>>>>> parent of c54ae89... 添加Diary，Memo，User 三个类
 </resources>
 
