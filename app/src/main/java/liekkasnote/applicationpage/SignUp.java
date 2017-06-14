@@ -66,6 +66,7 @@ public class SignUp extends AppCompatActivity {
 
     }
 
+
     private void findViews() {
         username = (EditText) findViewById(R.id.input_username);
         password = (EditText) findViewById(R.id.input_password);
