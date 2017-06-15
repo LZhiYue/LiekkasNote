@@ -1,74 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorLightBlue"
-    tools:context="liekkasnote.applicationpage.SignUp">
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
 
     <ImageView
-        android:id="@+id/app_logo"
-        android:layout_centerHorizontal="true"
-        android:src="@mipmap/logo"
-        android:layout_marginTop="50dp"
         android:layout_width="200dp"
-        android:layout_height="150dp" />
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/iv_init_logo"
+        android:layout_gravity="center"
+        />
 
-    <TextView
-        android:id="@+id/app_name"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/app_logo"
-        android:textSize="20sp"
-        android:text="Liekkas's Note"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_username"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:cursorVisible="true"
+            android:theme="@style/login_edittext"
+            android:textColorHint="@color/username_color"
+            android:layout_marginTop="10dp"
+            android:hint="用户名" />
 
 
-    <EditText
-        android:id="@+id/input_username"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginEnd="40dp"
-        android:hint="请输入用户名"
-        android:layout_below="@+id/app_name"
-        android:layout_centerHorizontal="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_password"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:password="true"
+            android:textColor="#ffffff"
+            android:cursorVisible="true"
+            android:theme="@style/login_edittext"
+            android:textColorHint="@color/username_color"
+            android:hint="密码"
+            />
 
-    <EditText
-        android:id="@+id/input_password"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginEnd="40dp"
-        android:hint="请输入密码"
-        android:inputType="textPassword"
-        android:layout_below="@+id/input_username"
-        android:layout_centerHorizontal="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm_input_password"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:cursorVisible="true"
+            android:theme="@style/login_edittext"
+            android:textColorHint="@color/username_color"
+            android:hint="请再输入密码"
+            />
 
-    <EditText
-        android:id="@+id/confirm_input_password"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginEnd="40dp"
-        android:hint="重复密码"
-        android:inputType="textPassword"
-        android:layout_below="@+id/input_password"
-        android:layout_centerHorizontal="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUp_button"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="注  册"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/login_background"/>
+    </LinearLayout>
 
     <Button
-        android:id="@+id/signUp_button"
-        android:layout_below="@id/confirm_input_password"
-        android:layout_marginTop="15dp"
-        android:text="注册"
-        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:id="@+id/skip_button"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:text="已有账号？去登录"/>
 
-
-
-</RelativeLayout>
+</LinearLayout>

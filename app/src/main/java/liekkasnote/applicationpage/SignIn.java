@@ -67,7 +67,7 @@ public class SignIn extends AppCompatActivity {
     }
 
     private void findViews() {
-        signup_btn = (TextView) findViewById(R.id.register);
+        signup_btn = (TextView) findViewById(R.id.register_button);
         username = (EditText) findViewById(R.id.input_username);
         password = (EditText) findViewById(R.id.input_password);
 
