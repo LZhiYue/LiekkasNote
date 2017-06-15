@@ -1,61 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:background="@drawable/diary_list_shape"
+    >
 
-    <TextView
-        android:id="@+id/diary_month"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="30dp"
-        android:text="5"
-        android:textSize="32sp"
-        android:textColor="@color/colorDeepBlue"
-        android:textStyle="bold"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear1"
+            android:gravity="center"
+            android:layout_margin="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/diary_month"
+                android:text="6月"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:textColor="@color/diary_list_text_color"
+                android:layout_toStartOf="@+id/day"
+                />
 
-    <TextView
-        android:id="@+id/diary_day"
-        android:layout_below="@+id/diary_month"
-        android:layout_alignRight="@+id/diary_month"
-        android:layout_alignLeft="@+id/diary_month"
-        android:text="三"
-        android:textSize="20sp"
-        android:textColor="@color/colorDeepBlue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/diary_time"
-        android:layout_marginLeft="15dp"
-        android:layout_toEndOf="@+id/diary_month"
-        android:layout_alignTop="@+id/diary_month"
-        android:text="11:10"
-        android:textSize="20sp"
-        android:textColor="@color/colorDeepBlue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/diray_day"
+                android:layout_alignBottom="@+id/month"
+                android:layout_marginTop="25dp"
+                android:text="三"
+                android:textSize="20dp"
+                android:textColor="@color/diary_list_text_color"
+                />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/diary_title"
-        android:layout_below="@+id/diary_time"
-        android:layout_toEndOf="@+id/diary_day"
-        android:layout_alignBottom="@+id/diary_day"
-        android:gravity="bottom"
-        android:layout_marginLeft="15sp"
-        android:text="她和她的猫"
-        android:textColor="@color/colorDeepBlue"
-        android:textSize="28sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/linear1"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/diary_time"
+                android:text="10:10"
+                android:textColor="@color/diary_list_text_color"
+                android:gravity="center"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/diary_title"
+                android:text="今日吃法"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/diary_list_text_color"
+                android:layout_toRightOf="@+id/month"
+                /></LinearLayout>
+    </LinearLayout>
+
 
     <ImageView
-        android:id="@+id/diary_edit"
-        android:layout_alignTop="@+id/diary_month"
-        android:layout_alignBottom="@+id/diary_day"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="20dp"
-        android:src="@drawable/ic_action_edit"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="wrap_content"
+        android:id="@+id/diary_edit"
+        android:src="@mipmap/ic_edit_blue_45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="60dp"/>
 </RelativeLayout>

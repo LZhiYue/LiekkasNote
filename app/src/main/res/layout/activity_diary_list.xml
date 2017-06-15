@@ -4,21 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context="liekkasnote.applicationpage.DiaryList">
 
     <RelativeLayout
         android:id="@+id/diary_bar"
-        android:background="#CCFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/diary_backto_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_arrow_back_35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            />
 
         <TextView
             android:id="@+id/diary_title"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
             android:gravity="center"
-            android:textColor="@color/colorDeepBlue"
+            android:textColor="@color/background_color"
             android:textSize="28sp"
+            android:textStyle="bold"
             android:text="DIARY"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -26,26 +37,50 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/diary_list"
         android:layout_below="@+id/diary_bar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@mipmap/home_page_background">
 
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-
+            android:layout_height="match_parent"
+            android:id="@+id/diary_list"
+            >
         </ListView>
-
-
-
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/RL_main_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_color"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
 
 
 
+        <ImageView
+            android:id="@+id/add_diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_add" />
+
+        <ImageView
+            android:id="@+id/delete_diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/ic_delete" />
+    </RelativeLayout>
 
 </RelativeLayout>
