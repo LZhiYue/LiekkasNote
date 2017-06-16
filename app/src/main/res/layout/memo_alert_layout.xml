@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_username"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:cursorVisible="true"
+        android:theme="@style/memo_edittext"
+        android:textColorHint="#E6E6E6"
+        android:layout_marginTop="20dp"
+        android:hint="备忘内容" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm_btton"
+            android:text="确认"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:textColor="#666666"
+            android:background="@drawable/memo_add_button"/>
+
+        <Button
+            android:layout_gravity="end"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel_btton"
+            android:text="取消"
+            android:textSize="20sp"
+            android:textColor="#666666"
+            android:background="@drawable/memo_add_button"/>
+
+    </LinearLayout>
+
+</LinearLayout>
