@@ -29,6 +29,7 @@
             android:cursorVisible="true"
             android:theme="@style/login_edittext"
             android:textColorHint="#E6E6E6"
+            android:singleLine="true"
             android:layout_marginTop="20dp"
             android:hint="用户名" />
 
@@ -43,6 +44,7 @@
             android:password="true"
             android:textColor="#ffffff"
             android:cursorVisible="true"
+            android:singleLine="true"
             android:theme="@style/login_edittext"
             android:textColorHint="#E6E6E6"
             android:hint="密码"
