@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +15,8 @@ import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVUser;
 import com.avos.avoscloud.LogInCallback;
 import com.example.sk2014.liekkasnote.R;
+
+import liekkasnote.utility.LeanCloudUtility;
 
 public class SignIn extends AppCompatActivity {
     private TextView signup_btn;
@@ -49,18 +52,7 @@ public class SignIn extends AppCompatActivity {
                 } else if (TextUtils.isEmpty(pwd)) {
                     Toast.makeText(SignIn.this, "密码不能为空", Toast.LENGTH_SHORT).show();
                 } else {
-                    AVUser.logInInBackground(name, pwd, new LogInCallback<AVUser>() {
-                        @Override
-                        public void done(AVUser avUser, AVException e) {
-                            if (e == null) {
-                                Toast.makeText(SignIn.this, "登录成功", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(SignIn.this, HomePage.class));
-                                SignIn.this.finish();
-                            } else {
-                                Toast.makeText(SignIn.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                    });
+                    LeanCloudUtility.SignIn(name, pwd, SignIn.this);
                 }
             }
         });

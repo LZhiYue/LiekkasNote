@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,6 +14,8 @@ import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVUser;
 import com.avos.avoscloud.SignUpCallback;
 import com.example.sk2014.liekkasnote.R;
+
+import liekkasnote.utility.LeanCloudUtility;
 
 public class SignUp extends AppCompatActivity {
     private EditText username;
@@ -47,23 +50,8 @@ public class SignUp extends AppCompatActivity {
         } else if (!pwd.equals(confirm_pwd)) {
             Toast.makeText(SignUp.this, "两次输入的密码不一致", Toast.LENGTH_SHORT).show();
         } else {
-            AVUser user = new AVUser();
-            user.setUsername(name);
-            user.setPassword(pwd);
-            user.signUpInBackground(new SignUpCallback() {
-                @Override
-                public void done(AVException e) {
-                    if (e == null) {
-                        Toast.makeText(SignUp.this, "注册成功", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(SignUp.this, SignIn.class));
-                        SignUp.this.finish();
-                    } else {
-                        Toast.makeText(SignUp.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                    }
-                }
-            });
+            LeanCloudUtility.signUp(name, pwd, SignUp.this);
         }
-
     }
 
     private void findViews() {
