@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">LiekkasNote</string>
+    <string name="username_hint">用户名</string>
+    <string name="password_hint">密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="register_hint">马上注册一个</string>
+    <string name="no_account">没有账号？</string>
+    <string name="app_title">欢迎来到我们的日记本</string>
+    <string name="back_to_login">返回登录界面</string>
+    <string name="clear_register_editor">清空</string>
+    <string name="newDiary">编辑新的日记</string>
+    <string name="myDiary">我的日记列表</string>
+    <string name="fetchDiary">抽取他人日记</string>
+    <string name="otherDiary">他人日记列表</string>
+    <string name="diary_content">日记正文*</string>
+    <string name="diary_title">日记标题*</string>
+    <string name="monthDiaryNumber">本月总数</string>
+    <string name="yearDiaryNumber">本年总数</string>
+    <string name="totalDiaryNumber">全部</string>
+    <string name="confirmHint">再次确认密码</string>
 </resources>
