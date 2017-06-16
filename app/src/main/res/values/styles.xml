@@ -22,4 +22,9 @@
         <item name="android:colorControlActivated">#E6E6E6</item>
     </style>
 
+    <style name="memo_edittext" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlNormal">#00B3B3</item>
+        <item name="android:colorControlActivated">#00B3B3</item>
+    </style>
+
 </resources>

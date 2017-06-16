@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:layout_marginTop="20dp"
-    android:layout_margin="20dp">
+    android:background="@color/white">
+
     <TextView
         android:id="@+id/first_letter"
         android:layout_width="wrap_content"
@@ -13,8 +13,8 @@
         android:textColor="#00B3B3"
         android:layout_gravity="center"
         android:textSize="18sp"
-        android:gravity="center|center_horizontal"
-        />
+        android:gravity="center|center_horizontal" />
+
     <TextView
         android:id="@+id/name"
         android:gravity="center_horizontal"

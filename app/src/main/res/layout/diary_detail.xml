@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="#67B5E6"
+            android:background="#99CCCC"
             android:orientation="vertical">
 
             <TextView
@@ -77,25 +77,72 @@
             android:layout_gravity="center_horizontal"
             android:text="中大生活"
             android:id="@+id/diary_title"
-            android:textColor="#67B5E6"
+            android:textColor="#99CCCC"
             android:textSize="30dp"
             android:textStyle="bold" />
 
-        <ScrollView
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
+            <ScrollView
                 android:layout_width="match_parent"
-                android:id="@+id/diary_content"
                 android:layout_height="match_parent"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:text="日记内容"/>
+                android:layout_weight="5">
 
-        </ScrollView>
+                <TextView
+                    android:id="@+id/diary_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="日记内容"
+                    android:textColor="#336699"
+                    android:textSize="20dp" />
+
+            </ScrollView>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:id="@+id/RL_main_bottom_bar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shadow_top"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/ic_arrow_left_white_35dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/confirm" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/ic_edit" />
+            </RelativeLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 

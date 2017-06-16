@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#99CCCC</color>
+    <color name="colorPrimaryDark">#99CCCC</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorLightBlue">#9fcedc</color>
     <color name="colorDark">#000000</color>
@@ -11,7 +11,7 @@
     <color name="black">#000000</color>
 
     <!--background-->
-    <color name="background_color">#69D2E7</color>
+    <color name="background_color">#99CCCC</color>
     <color name="homepage_background">#E6E6E6</color>
 
     <!--Button_background-->
