@@ -39,11 +39,10 @@
 
         <activity android:name=".OtherDiaryList" />
         <activity android:name=".OtherDiaryDetail" />
-
-        <activity android:name=".DiaryDetail"></activity>
-        <activity android:name=".SignUpActivity"></activity>
-        <activity android:name=".AddDiary"></activity>
-
+        <activity android:name=".DiaryDetail" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".AddDiary" />
+        <activity android:name=".DiaryList"></activity>
     </application>
 
 </manifest>
