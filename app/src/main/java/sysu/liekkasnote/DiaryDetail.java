@@ -17,9 +17,9 @@ import com.avos.avoscloud.GetCallback;
 
 import java.util.List;
 
-import datastruct.Diary;
-import datastruct.DiaryMessage;
-import datastruct.DiaryMessageAdapter;
+import sysu.moudle.Diary;
+import sysu.moudle.DiaryMessage;
+import sysu.moudle.DiaryMessageAdapter;
 
 public class DiaryDetail extends AppCompatActivity {
     public Diary diary;
@@ -32,7 +32,7 @@ public class DiaryDetail extends AppCompatActivity {
         setContentView(R.layout.activity_diary_detail);
 
         listView = (ListView)findViewById(R.id.myListView);
-        diaryMessageAdapter = new DiaryMessageAdapter(MyDiaryDetail.this);
+        diaryMessageAdapter = new DiaryMessageAdapter(DiaryDetail.this);
 
         Bundle bundle = getIntent().getExtras();
 
@@ -76,7 +76,7 @@ public class DiaryDetail extends AppCompatActivity {
                     }
                     listView.setAdapter(diaryMessageAdapter);
                 } else {
-                    Toast.makeText(MyDiaryDetail.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DiaryDetail.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
