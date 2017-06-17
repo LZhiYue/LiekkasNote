@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_otherDiaryDetail"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/title"
+        android:text="I'm coooooooding"
+        android:layout_marginBottom="15dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/content"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/date"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:text="2016-12-10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#aaa"
+        android:layout_height="1dp" />
+    <EditText
+        android:id="@+id/submit_area"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:background="@color/buttonColor"
+        android:id="@+id/submit"
+        android:layout_gravity="right"
+        android:text="评论"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp"/>
+    <ListView
+        android:id="@+id/myListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>
