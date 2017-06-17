@@ -108,6 +108,7 @@ public class HomePageActivity extends AppCompatActivity {
                 getOtherDiary();
             }
         });
+
         AVInstallation.getCurrentInstallation().saveInBackground(new SaveCallback() {
             @Override
             public void done(AVException e) {
@@ -169,6 +170,7 @@ public class HomePageActivity extends AppCompatActivity {
             public void done(List<AVObject> list, AVException e) {
                 if (e == null ) {
                     if (list.size() != 0) {
+                        Log.d("Test", "ok1");
                         int random = (int)(Math.random()*list.size());
                         AVObject obj = list.get(random);
                         Intent intent = new Intent(HomePageActivity.this, OtherDiaryDetail.class);

@@ -47,7 +47,7 @@ public class DiaryList extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(DiaryList.this, DiaryList.class);
+                Intent intent = new Intent(DiaryList.this, DiaryDetail.class);
                 Diary diary = (Diary) adapterView.getAdapter().getItem(i);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("object", diary);

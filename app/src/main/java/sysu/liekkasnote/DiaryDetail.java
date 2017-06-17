@@ -5,6 +5,7 @@ import android.icu.text.DateFormat;
 import android.icu.text.SimpleDateFormat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -76,6 +77,7 @@ public class DiaryDetail extends AppCompatActivity {
                     }
                     listView.setAdapter(diaryMessageAdapter);
                 } else {
+                    Log.d("Test", e.getMessage());
                     Toast.makeText(DiaryDetail.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }

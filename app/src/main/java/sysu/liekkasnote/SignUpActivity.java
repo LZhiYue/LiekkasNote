@@ -57,8 +57,9 @@ public class SignUpActivity extends AppCompatActivity {
                     TextView username = (TextView)findViewById(R.id.usernameEdit);
                     TextView password = (TextView)findViewById(R.id.passwordEdit);
                     TextView passwordConfirm = (TextView)findViewById(R.id.passwordConfirm);
+                    Log.d("Test", password.getText() + " " + passwordConfirm.getText());
                     if (!username.getText().equals("") && !password.getText().equals("")) {
-                        if (!passwordConfirm.getText().equals(password.getText().toString())) {
+                        if (!passwordConfirm.getText().toString().equals(password.getText().toString())) {
                             Toast.makeText(SignUpActivity.this, "两次输入的密码不一致", Toast.LENGTH_SHORT).show();
                         }else {
                             registerUser();
