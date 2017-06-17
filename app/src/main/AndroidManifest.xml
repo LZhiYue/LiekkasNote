@@ -42,6 +42,8 @@
 
         <activity android:name=".DiaryDetail"></activity>
         <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".AddDiary"></activity>
+
     </application>
 
 </manifest>
