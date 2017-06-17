@@ -39,6 +39,8 @@
 
         <activity android:name=".OtherDiaryList" />
         <activity android:name=".OtherDiaryDetail" />
+
+        <activity android:name=".DiaryDetail"></activity>
         <activity android:name=".SignUpActivity"></activity>
     </application>
 
